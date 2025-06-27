@@ -1,0 +1,3 @@
+2025-06-27 13:10:58,926 - INFO - Loaded config - PTT key: Shift, Model size: small
+2025-06-27 13:10:58,926 - INFO - Using PTT key: Shift
+2025-06-27 13:10:58,926 - INFO - Using Whisper model: small

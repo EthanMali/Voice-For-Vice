@@ -239,6 +239,8 @@ class VoiceATC:
             'on voice': 'envoy',
             'rnavv': 'rnav',
             ' mountain': 'mt',
+            'clte': 'climb and maintain',
+            'ritter' :'radar',
 
             
             'themt burn'   : 'mt vernon',
@@ -290,7 +292,8 @@ class VoiceATC:
             'themt vernon visual': 'mt vernon visual',
             'themt burn on visual': 'mt vernon visual',
             'the mount run on a visual': 'mt vernon visual',
-            'themt vernav on the visual': 'mt vernon visual'       
+            'themt vernav on the visual': 'mt vernon visual'  ,
+            '222':'22'     
      }
 
         # New protected phrases list
