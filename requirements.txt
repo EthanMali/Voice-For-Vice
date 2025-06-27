@@ -1,0 +1,12 @@
+numpy
+whisper
+keyboard
+pyautogui
+pyaudio
+wave
+configparser
+pygetwindow
+fuzzywuzzy
+phonetics
+torch
+scipy
