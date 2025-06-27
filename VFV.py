@@ -13,7 +13,7 @@ import whisper
 import keyboard
 import pyautogui
 import pyaudio
-import wave
+
 import time
 import configparser
 import os
@@ -625,12 +625,12 @@ class VoiceATC:
             audio_data = b''.join(frames)
             
             # DEBUG: Save audio to a file for playback
-            with wave.open("debug_recording.wav", "wb") as wf:
+            """with wave.open("debug_recording.wav", "wb") as wf:
                 wf.setnchannels(1)
                 wf.setsampwidth(2)  # 16-bit audio
                 wf.setframerate(16000)
                 wf.writeframes(audio_data)
-            logger.info("Saved audio to 'debug_recording.wav'")  # Check this file in a media player
+            logger.info("Saved audio to 'debug_recording.wav'")  # Check this file in a media player"""
             
             # Convert to numpy array and apply amplification
             audio_array = np.frombuffer(audio_data, dtype=np.int16).astype(np.float32) / 32768.0
@@ -985,7 +985,7 @@ class VoiceATC:
             - "22L" / "04R" / "15C" when 'runway' is omitted
         • Ignores digits that are part of callsigns or altitudes.
         """
-        # ❶ First, require the literal word 'runway' if it’s in the phrase
+        # ❶ First, require the literal word 'runway' if its in the phrase
         m = re.search(
             r'runway\s+(\d{1,2})\b(?:\s*(left|right|center)|\s*([lrc]))?',
             text, re.I)

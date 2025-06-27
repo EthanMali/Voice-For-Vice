@@ -1,12 +1,13 @@
 numpy
-whisper
+whisper==1.1.10
 keyboard
 pyautogui
 pyaudio
-wave
 configparser
 pygetwindow
 fuzzywuzzy
 phonetics
 torch
 scipy
+thefuzz
+python-Levenshtein
